@@ -1,0 +1,432 @@
+<html >
+<head>
+	<title> web page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<style>
+	html {
+	font-size:62.5px;
+	overflow:scroll;
+	}
+	* {
+	padding:0; margin:0;
+	}
+	body{
+	color:white;
+	font-family:calibri;
+	}
+	.nav {
+	display:flex;
+	width:calc(100vw-30px);
+	justify-content:space-between;
+	}
+	.navbar {
+	display:flex;
+	}
+	section {
+	height:250vh; width:100vw;
+	}
+	a {
+	text-decoration:none;
+	color:black;
+	}
+	#logo {
+	margin-left:10px;
+	height:80px; width:100px;
+	}
+	#logo1 {
+	height:300px; width:300px;
+	}
+	#logo2 {	
+	margin-right:20px;
+	height:130px; width:150px;
+	justify-content:end;
+	}
+	.ihome {
+	display:grid;
+	grid-template-columns:30vw 55vw 15vw;
+	margin-top:20px;
+	}
+	#logot {
+	text-align:center;
+	margin:1rem 0.5rem 0px 10px;
+	color:#01ADEF;
+	font-size:1rem;
+	font-family:Lucida Handwriting;
+	}
+	#tlogo {
+	font-size:0.5rem;
+	color:#FCAD1D;
+	font-family:calibri;
+	}
+	.blue {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows:500px 900px;
+	gap:30px;
+	background:#007bff;
+	padding:20px;
+	height:135vh; width:calc(100vw-100px); 
+	}
+	.homed {
+	padding:0.48rem;
+	width:auto; height:50vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	font-size:0.4rem;
+	}
+	.homed1 {
+	padding:0.48rem;
+	width:auto; height:50vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+	.homed2 {
+	padding:0.48rem;
+	width:auto; height:60vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+	.homed3 {
+	padding:0.48rem;
+	width:auto; height:60vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+	.homet {
+	border-radius:10px;
+	margin-left:2.8rem;
+	font-size:0.6rem;
+	text-align:center;
+	background:#FCAD1D;
+	}
+	#symptom {
+	height:100px; width:90px;
+	border-radius:100%; 
+	border:5px solid #FCAD1D;
+	}
+	.nhead {
+	font-size:0.6rem;
+	color:#01ADEF;
+	}
+	.ndata {
+	color:black;
+	font-size:0.4rem;
+	}
+	#home {
+	height:175vh;
+	}
+	#about {
+	height:150vh; width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+	.blue1 {
+	background:white;
+	height:124vh; width:95VW;
+	padding-top:80px;
+	border-radius:30px;
+	box-shadow:2px 2px 25px 8px grey;
+	}
+	#watch {
+	width:500px;
+	padding:10px;
+	color:#FCAD1D;
+	border-top:2px dotted #01ADEF;
+	border-bottom:2px dotted #01ADEF;
+	}
+	.yrev {
+	height:auto; width:100vw;	
+	display:flex;
+	}
+	.rev {
+	height:130px; width:105px;
+	border:10px solid #FCAD1D;
+	border-bottom:10px solid transparent;
+	border-radius:100%;
+	margin:20px;
+	padding:2px;
+	margin-left:100px;
+	margin-right:100px;
+	}
+	.revb {
+	margin-top:30px;
+	height:29.1vh; width:auto;
+	background:#007bff;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	}
+	#achivement {
+	background:#007bff;
+	height:120vh; width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+	.blue2 {
+	background:white;
+	height:100vh; width:95VW;
+	padding-top:80px;
+	border-radius:30px;
+	}
+	.blue3 {
+	background:white;
+	height:80vh; width:95VW;
+	padding-top:80px;
+	border-radius:30px;
+	border:2px solid black;
+	}
+	#support {
+	height:100vh; width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+	.fic {
+	height:70px; width:200px;
+	margin-top:20px;
+	margin-right:10px;
+	margin-left:10px;
+	}	
+
+	@media (max-width:750px) {
+	html {
+	font-size:42.5px;
+	}
+	#home {
+	height:225vh; 
+	}
+	.blue {
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.8fr 0.9fr 1fr 1fr ;
+	row-gap:30px;
+	padding:20px;
+	height:190vh; width:calc(100vw-100px); 
+	}
+	.homed {
+	padding:0.48rem;
+	width:auto; height:30vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	font-size:0.45rem;
+	}
+	.homed1 {
+	padding:0.48rem;
+	width:auto; height:35vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+	.homed2 {
+	padding:0.48rem;
+	width:auto; height:40vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+	.homed3 {
+	padding:0.48rem;
+	width:auto; height:36vh;
+	color:black;
+	border-radius:30px;
+	background:white;
+	margin-top:0.7rem;
+	font-size:0.4rem;
+	}
+
+	.blue1 {
+	height:116vh;
+	}
+	}
+
+	
+	.nlink {
+	background:transparent;
+	position:relative;
+	z-index:1;
+	font-size:0.5rem;
+	padding:10px;
+	height:40px; width:320px;
+	color:black;
+	border:1px solid #007bff; 
+	border-radius:50px;
+	}
+	.nlink::before {
+	content:'';
+	font-size:0.5rem;
+	z-index:-1;
+	height:50px;
+	position:absolute;
+	left:0px; top:0px;
+	background:#FCAD1D;
+	height:60px; width:0px;
+	border-radius:50px;
+	}
+	.nlink:hover::before {
+	height:60px; width:340px;
+	transition:1.5s ease-in;
+	}
+	.nlink:hover {
+	border:1px solid white;
+	color:white;
+	zIndex:1;
+	transition:1.5s;
+	}
+	#chere { 
+	color:#007bff; 
+	}
+	#chere:hover {
+	color:white;
+	transition:1.5s;
+	}
+	
+	.ele {
+	display:flex;
+	margin:30px 20px 0px;
+	font-size:20px;
+	background:transparent;
+	position:relative;
+	padding-bottm:5px;
+	zIndex:1;
+	}
+	.ele::before {
+	content:'';
+	zIndex:-1;
+	position:absolute;	
+	background-image:linear-gradient(to right,cyan,#007bff);
+	height:5px; width:0%;
+	border-radius:50%;
+	top:25px;
+	}
+	.ele:hover::before {
+	width:100%;
+	transition:1s;
+	}
+
+	.rev:hover {
+	scale:1.2;
+	transition:0.5s;
+	}	
+	.social {
+	color:black;
+	}
+	.social:hover {
+	scale:1.2;
+	transition:0.5s;
+	}
+	.fic:hover {
+	scale:1.2;
+	transition:0.5s;
+	}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<div><img src="healthlogo.png" id="logo"> </div>
+		<div class="navbar">
+			<div class="bars"><a href="#home" class="ele"> Home </a></div>
+			<div class="bars"><a href="#about" class="ele"> About Us </a></div>
+			<div class="bars"><a href="#achivement" class="ele"> Achivements </a></div>
+			<div class="bars"><a href="#support" class="ele"> Support </a></div>
+			<div class="bars"><a href="#search" class="ele"> Search </a></div>
+		</div>
+	</nav>
+	<section id="home" >
+		<div class="ihome">
+			<img src="logo1.jpg" id="logo1">
+			<p id="logot">Zindagi ko <br>&nbsp&nbsp   claim kar le <span id="tlogo"><br> even with <b>Diabetes</b></span></p> 
+			<img src="healthlogo.png" id="logo2">
+		</div>
+		<div class="blue" id="blue-grid"> 
+			<div class="blue-c">
+				<b class="homet" style="padding:5px;">EDITOR'S NOTE</b>
+				<div class="homed" bgcolor="white"><br><p> Dear Policyholder, <br>Welcome to the latest edition of our <span style="color:#007bff;">'Zindagi Ko Claim Kar Le'</span> Newsletter - your ultimate guide to better health and enhanced insurance coverage. In this issue, we focus on empowering you with valuable insights to effectively <b> manage diabetes.</b> <br><br> Additionally, we're excited to introduce our newly launched <i>Cashless Everywhere facility,</i> offering you seamle access to cashless hospitalisation across India. Stay tuned as we walk you through how to make the most of this convenient service. </p></div>
+			</div>
+			<div class="blue-c">
+				<div class="homed1" bgcolor="white">
+					<center><img src="symptom.jpg" id="symptom"></center>
+					<center><b><p class="nhead">SYMPTOMS & DIAGONOSIS OF DIABETES </p></b></center><br> 
+					<p class="ndata"><i> Type 2 diabetes often goes undiagnosed</i> for up to two years. Learn about the <b>early warning signs, causes, and diagnosis</b> of this condition to take proactive steps towards better health. </p><br>
+					<center><b><p class="nlink"> Read The Blog</p></b></center>
+				 </div>
+			</div>
+			<div class="blue-c">
+				<div class="homed2" bgcolor="white">
+					<center><img src="doctor.jpg" id="symptom"></center>
+					<center><b><p class="nhead">PREVENT & MANAGE DIABETES </p></b></center><br> 
+					<p class="ndata"><i>Did you know that over 60% of individuals with pre-diabetess progress to diabetes within five years?</i></p><br><p>Discover expert tips on preventing pre-diabete, understanding the role of family history and exploring ways for type 2 diabetes reversal. Join <b>Dr. Sunil Kumar Mishra, Senior Endocrinologist at Medanta- </b> The medicity, Gurugram, as he shares his insights.</p><br>
+					<center><b><p class="nlink"> Watch The Webinar</p></b></center>
+				 </div>
+			</div>
+			<div class="blue-c">
+				<div class="homed3" bgcolor="white">
+					<center><img src="doctor1.jpg" id="symptom"></center>
+					<center><b><p class="nhead">WHAT TO DO IN CASE OF COMPLICATIONS?</p></b></center><br> 
+					<p class="ndata">Experience peace of mind knowing that you can now <b> avail cashless medical treatment at any hospital, even outside our network, </b>with our newly introduced Cashless Everywhere facility. Whether it's diabetes- related complications or any other medical issue, we've got you covered.</p><br>
+					<center><b><p class="nlink"> Intimate Cashless Claim</p></b></center>
+				 </div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="blue1">
+			<b><center><p class="nhead"> IS CARE + RELIABLE DURING MEDICAL TREATMENT? </p></center></b>
+			<center><p class="ndata"> With over <b>15 Lakh claims processed^</b>, we remain committed during challenging time.</p></center><br>
+			<center><b><p id="watch" class="ndata"> Watch the first-hand claim experience of fellow customers by clicking on the YouTube icon. </p></b></center>
+			<div class="yrev"><img src="rev1.jpg" class="rev"> <p class="nhead" style=" margin-top:20px; width:400px;">"<span class="ndata" > Niva Bupa provided the right kind of support at the right time during medical emergencies.  </span>" <br><span class="nhead" style="font-size:0.4rem;">RAMESH DIXIT</span></p> </div>
+			<div class="yrev"><img src="rev2.jpg" class="rev"> <p class="nhead" style=" margin-top:20px; width:400px;">"<span class="ndata" > Niva Bupa provided the right kind of support at the right time during medical emergencies.  </span>" <br><span class="nhead" style="font-size:0.4rem;">HAMZA SHEIKH</span></p> </div>
+			<div class="yrev"><img src="rev4.webp" class="rev"> <p class="nhead" style=" margin-top:20px; width:400px;">"<span class="ndata" > Niva Bupa provided the right kind of support at the right time during medical emergencies.  </span>" <br><span class="nhead" style="font-size:0.4rem;">DILJIT SINGH</span></p> </div>
+			<div class="revb">
+				<center><p class="nhead" style="color:white; padding-top:30px; font-size:0.9rem;"> Want to know more about our claim process?</p></center>
+				<center><b><p class="nlink" style="background:white; margin-top:30px; font-size:0.7rem;" id="chere"> Click Here</p></b></center>
+		 </div>
+		 </div>
+	</section>
+
+	<section id="achivement">
+		<div class="blue2">
+			<b><center><p class="nhead" style="font-size:1rem; color:#007bff; margin-bottom:80px;"> INDUSTRY RECOGNISES OUR EFFORTS</p></center></b>
+			<div class="yrev"><img src="award1.jpg" class="rev"> <p class="ndata" style=" margin-top:20px; width:500px;"><b>Best Health Insurer 2023 </b><br><br> Crowned as the Standalone Best Health Insurer at Mint BFSI awards 2023.</p> </div>
+			<div class="yrev"><img src="award2.jpg" class="rev"> <p class="ndata" style=" margin-top:20px; width:500px;"><b>Swift & Prompt Insurer 2023 </b><br><br> Recognised at ET Now Insurance Summit & Awards 2023 for ensuring Execellence in all endeavours. </p> </div>
+			<div class="yrev"><img src="award3.jpg" class="rev"> <p class="ndata" style=" margin-top:20px; width:500px;"><b>Golden Peacock Award 2023 </b><br><br> Honored by the Institue of Directors for ESG Excellence for or concrete steps towards sustainability.</p> </div>
+		</div>
+	</section>
+
+	<section id="support">
+		<div class="blue3">
+			<b id="hhead"><p class="nhead"><span class="nhead" "> --------------------------- </span><span style="color:#FCAD1D;">O</span><span style="font-family:lucida handwriting;"> Zindagi ko claim kar le </span><span style="color:#FCAD1D;">O</span><span class="nhead"> -------------------------- </span></p></b><br>
+			<b><center style="color:black; margin-bottom:20px;"> Follow us on </center></b>
+			<center><ion-icon name="logo-instagram" class="social"></ion-icon> 
+				<ion-icon name="logo-facebook" class="social"></ion-icon> 
+				<ion-icon name="logo-twitter" class="social"></ion-icon>
+				<ion-icon name="logo-linkedin" class="social"></ion-icon>
+				<b><center style="color:black; font-size:0.6rem;"> Download the CARE + Health app now  </center></b>			
+			</center>
+			<center> <img src="google-play.webp" class="fic"> <img src="app-store.webp" class="fic"> </center>
+			<p style="color:black; font-size:0.35rem; padding:20px; margin-top:60px;">CARE + Health Insurance Limited (formerly known as max CARE Health Insurance Company Limited) (iRDAI registration No. 145). 'MAX' and 'HEARTBEAT' logo are registered trademarks of their respective owners and are being used by CARE + Health Insurance Company Limited under license. Registered Office Address: C-98, third Floor, Kalmegh Nagar, Part-1, New Nagpur-110025, Customer Helpline No. 1880-500-8888, Fax: +91 11 46743397, Website: <a href="www.maxcare.com">www.maxcare.com</a>, CIN: U66000DL20082912 </p>
+		</div>
+	</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
